@@ -19,6 +19,9 @@ Example:
 		app.post("/passwordreset",activator.createPasswordReset);
 		app.put("/passwordreset/:user",activator.completePasswordReset);
 
+## Custom Version Differences
+This version of Activator supports bulk account activation by processing an array of new user accounts (i.e. upload CSV file of new accounts to server, validate each, create new account records in DB, send out activation emails for each new account).
+
 ## Breaking Changes
 
 #### Templates
